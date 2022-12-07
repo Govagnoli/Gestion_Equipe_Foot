@@ -1,0 +1,122 @@
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1e;
+        color: #fefefe;
+    }
+    a {
+        color: #5fa9ee;
+    }
+    img {
+        filter: grayscale(20%);
+    }
+}
+
+/* Style général */
+body{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fin style général */
+
+/* squelette */
+    /* header */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Avenir;
+
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #E7E2CE;
+    position: sticky;
+    top: 0px;
+    color: #F9F7F0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav li:hover{
+    background-color: #E7E2CE;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #4D4D4D;
+    padding: 10px 0px;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #ACA9A1;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #66645C;
+}
+.deroulant > a::after{
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+    /* Fin header */
+
+
+/* Page ModificationJoueur */
+    /* Formulaire */
+        .FormulaireRecherJoueur{
+            margin: 20px;
+            color: #EAEAEA;
+        }
+    /* Fin FinFormulaire*/
+    
+    /* Page ModificationJoueur.php */
+        /* Resultat recherche joueur */
+            .ResRechercheJoueur{
+                margin: 20px;
+                color: #EAEAEA;
+            }
+        /* Fin Resultat*/
+    /* Fin Page ModificationJoueur.php */
+
+
+/* Fin Page ModificationJoueur*/
