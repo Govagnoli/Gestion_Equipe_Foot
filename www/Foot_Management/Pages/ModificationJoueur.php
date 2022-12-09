@@ -28,7 +28,7 @@
 		<header>
 			<nav>
 			  	<ul>
-			  		<li><a href="../../index.html">Accueil</a></li>
+			  		<li><a href="../index.html">Accueil</a></li>
 		    		<li class="deroulant"><a href="#">Gestion des Joueurs &ensp;</a>
 		      		<ul class="sous">
 				        <li><a href="./RechercheJoueur.html">Rechercher un joueur</a></li>
