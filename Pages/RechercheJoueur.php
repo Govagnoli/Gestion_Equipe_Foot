@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Gestion Joueurs</title>
-		<link rel="stylesheet" type="text/css" href="../CSS/Style.css">s
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
 	</head>
 	<body>
 		<header>
@@ -21,14 +21,14 @@
 		</header>
 		<div class="FormulaireRecherJoueur">
 			<fieldset>
-			<legend>Rechercher Joueur par son nom et prénom</legend>
-			<form action="JoueursRecherches.php" method="post">
-				<p>Nom <input type="text"  name ="Nom"/></p>
-				<p>Prénom <input type="text" name ="Prenom"/></p>
-				<input type="submit" name ="valider" value ="valider">
-                <input type="reset" name = "reset" value ="Effacer">
-			</form>
-		</fieldset>
+				<legend>Rechercher Joueur par son nom et prénom</legend>
+				<form action="JoueursRecherches.php" method="post">
+					<p>Nom <input type="text"  name ="Nom"/></p>
+					<p>Prénom <input type="text" name ="Prenom"/></p>
+					<input type="submit" name ="valider" value ="valider">
+	                <input type="reset" name = "reset" value ="Effacer">
+				</form>
+			</fieldset>
 		</div>
 	</body>
 </html>

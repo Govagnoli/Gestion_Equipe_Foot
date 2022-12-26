@@ -103,60 +103,67 @@ nav > ul li:hover .sous{
 
 
 
-/* Page ModificationJoueur */
+/* Page RechercheJoueur */
     /* Formulaire */
         .FormulaireRecherJoueur{
             margin: 20px;
             color: #EAEAEA;
         }
     /* Fin FinFormulaire*/
+/* Fin Page JoueursRecherches*/
+
+/* Page JoueursRecherches.php */
     
-    /* Page ModificationJoueur.php */
-        
-        /* Recherche de la photo et des information d'un joueur */
-            .rechercheJoueur{
-                display: flex;
-                align-items: center;
-                margin: 20px;
-                color: #EAEAEA;
-            }
-        /* Fin recherche de la photo et des information d'un joueur */
+    /* Recherche de la photo et des information d'un joueur */
+        .rechercheJoueur{
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            color: #EAEAEA;
+        }
+    /* Fin recherche de la photo et des information d'un joueur */
 
-        /* Photo joueur */
-            .photoJoueur{
-                display: flex;   
-            }
-        /* Fin photo joueur*/
+    /* Photo joueur */
+        .photoJoueur{
+            display: flex;   
+        }
+    /* Fin photo joueur*/
 
-        /* Recherche informations joueur */
-            .rechercheInformationsJoueur{
-                display: flex;
-            }
-        /* Fin recherche joueur*/
+    /* Recherche informations joueur */
+        .rechercheInformationsJoueur{
+            display: flex;
+        }
+    /* Fin recherche joueur*/
 
-        /* Boutons */
-            .Boutons{
-                display: flex;
-                flex-direction: column;
-                margin-left: 20px;
-            }
-        /* Fin Boutons*/
+    /* Boutons */
+        .Boutons{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+    /* Fin Boutons*/
 
-        /* Bouton Modifier Joueur*/
-            .BoutonsModifier{
-                display: flex;
-                margin-bottom: 10px;
-            }
-        /* Fin Bouton Modifier Joueur*/
+    /* Bouton Modifier Joueur*/
+        .BoutonsModifier{
+            display: flex;
+            margin-bottom: 10px;
+        }
+    /* Fin Bouton Modifier Joueur*/
 
-        /* Bouton Supprimer Joueur*/
-            .BoutonsSupprimer{
-                display: flex;
-                margin-top: 10px;
-            }
-        /* Fin Bouton Supprimer Joueur*/
+    /* Bouton Supprimer Joueur*/
+        .BoutonsSupprimer{
+            display: flex;
+            margin-top: 10px;
+        }
+    /* Fin Bouton Supprimer Joueur*/
 
-    /* Fin Page ModificationJoueur.php */
+/* Fin page JoueursRecherches.php */
+
+/* Page modifierUnJoueur */
+    
+    /* Formulaire pour modifier un joueur*/
+    .FormModifierJoueur {
+    }
 
 
-/* Fin Page ModificationJoueur*/
+/* Fin page modifierUnJoueur */

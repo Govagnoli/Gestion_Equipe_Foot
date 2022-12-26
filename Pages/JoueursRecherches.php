@@ -2,7 +2,7 @@
 	$repertoirePhoto = null;
 	$linkpdo = null;
 	if(!empty($_POST['Nom']) && !empty($_POST['Prenom'])) {
-        include './../PHP/Fonctions.php';
+        include './../Fonctions/Fonctions.php';
         $linkpdo = connexionBDD();
 	}	
 ?>
@@ -50,7 +50,7 @@
 							
 							#Bouton modifier
 							echo '<div class="BoutonsModifier">' ;
-								Bouton('./ModifierUnJoueur.php', 'Modifier');
+								Bouton('./ModifierUnJoueur.php', 'Modifier', $Joueur);
 							echo '</div>';
 
 							#Bouton supprimer
