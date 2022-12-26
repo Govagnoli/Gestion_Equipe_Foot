@@ -1,4 +1,38 @@
 <?php 
+    
+    //Affiche le menu. Si l'utilisateur est connecter il pourra naviguer sinon nan.
+    //$estConnecter est un boolean.
+    function menu($estConnecter) {
+        if($estConnecter) {
+            echo "<header>
+                <nav>
+                    <ul>
+                        <li><a href=\"./../index.php\">Connexion</a></li>
+                        <li class=\"deroulant\"><a href=\"#\">Gestion des Joueurs &ensp;</a>
+                        <ul class=\"sous\">
+                            <li><a href=\"./RechercheJoueur.php\">Rechercher un joueur</a></li>
+                            <li><a href=\"./AjoutJoueur.php\">Ajouter un joueur</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>";
+        } else {
+            echo "<header>
+                <nav>
+                    <ul>
+                        <li><a href=\"./index.php\">Connexion</a></li>
+                        <li class=\"deroulant\"><a href=\"#\">Gestion des Joueurs &ensp;</a>
+                        <ul class=\"sous\">
+                            <li><a href=\"./Pages/nonConnecter.php\">Rechercher un joueur</a></li>
+                            <li><a href=\"./Pages/nonConnecter.php\">Ajouter un joueur</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>";
+        }
+    }
 
     function connexionBDD() {
         $server = 'localhost';

@@ -1,7 +1,7 @@
 <?php
+	session_start();
     include './../Fonctions/Fonctions.php';
     $linkpdo = connexionBDD();
-    session_start();
     if(isset($_GET['Joueur'])) {
     	$_SESSION['joueur'] = $_GET['Joueur'];
     }    
@@ -16,21 +16,9 @@
         <title></title>
 	</head>
 	<body>
-		<header>
-			<nav>
-			  	<ul>
-			  		<li><a href="./../index.php">Accueil</a></li>
-		    		<li class="deroulant"><a href="#">Gestion des Joueurs &ensp;</a>
-		      		<ul class="sous">
-				        <li><a href="./RechercheJoueur.php">Rechercher un joueur</a></li>
-				        <li><a href="./AjoutJoueur.php">Ajouter un joueur</a></li>
-			      	</ul>
-			    	</li>
-			    </ul>
-			</nav>
-		</header>
-	
 		<?php 
+			menu($_SESSION['Connecter']);  
+			
 			echo '<div class="rechercheJoueur">' ;
 
 				#Affiche la photo joueur

@@ -42,35 +42,7 @@
 	</head>
 	<body>
 		<?php 
-			if($_SESSION['Connecter']) {
-				echo "<header>
-					<nav>
-					  	<ul>
-					  		<li><a href=\"./index.php\">Accueil</a></li>
-				    		<li class=\"deroulant\"><a href=\"#\">Gestion des Joueurs &ensp;</a>
-				      		<ul class=\"sous\">
-						        <li><a href=\"./Pages/RechercheJoueur.php\">Rechercher un joueur</a></li>
-						        <li><a href=\"./Pages/AjoutJoueur.php\">Ajouter un joueur</a></li>
-					      	</ul>
-					    	</li>
-					    </ul>
-					</nav>
-				</header>";
-			} else {
-				echo "<header>
-					<nav>
-					  	<ul>
-					  		<li><a href=\"./index.php\">Accueil</a></li>
-				    		<li class=\"deroulant\"><a href=\"#\">Gestion des Joueurs &ensp;</a>
-				      		<ul class=\"sous\">
-						        <li><a href=\"./Pages/nonConnecter.php\">Rechercher un joueur</a></li>
-						        <li><a href=\"./Pages/nonConnecter.php\">Ajouter un joueur</a></li>
-					      	</ul>
-					    	</li>
-					    </ul>
-					</nav>
-				</header>";
-			}
+			menu($_SESSION['Connecter']);
 
 			if($erreur) {
 				echo "Votre mot de passe ou votre login est incorrect.";
