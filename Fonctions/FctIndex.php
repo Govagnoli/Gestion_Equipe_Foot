@@ -25,6 +25,7 @@
                         <ul class=\"sous\">
                             <li><a href=\"./Pages/RechercheJoueur.php\">Rechercher un joueur</a></li>
                             <li><a href=\"./Pages/AjoutJoueur.php\">Ajouter un joueur</a></li>
+                            <li><a href=\"./Pages/AfficherJoueurs.php\">Liste des joueurs</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -38,7 +39,7 @@
                         <li class=\"deroulant\"><a href=\"#\">Gestion des Joueurs &ensp;</a>
                         <ul class=\"sous\">
                             <li><a href=\"./Pages/nonConnecter.php\">Rechercher un joueur</a></li>
-                            <li><a href=\"./Pages/nonConnecter.php\">Ajouter un joueur</a></li>
+                            <li><li><a href=\"./Pages/nonConnecter.php\">Liste des joueurs</a></li></li>
                         </ul>
                         </li>
                     </ul>

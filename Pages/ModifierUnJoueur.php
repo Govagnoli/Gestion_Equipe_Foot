@@ -1,6 +1,8 @@
 <?php
 	session_start();
     include './../Fonctions/Fonctions.php';
+    blocageConnexion();
+    
     $linkpdo = connexionBDD();
     if(isset($_GET['Joueur'])) {
     	$_SESSION['joueur'] = $_GET['Joueur'];

@@ -1,6 +1,7 @@
 <?php 
 	session_start();
 	include './../Fonctions/Fonctions.php';
+	blocageConnexion();
 ?>
 
 <!DOCTYPE HTML>

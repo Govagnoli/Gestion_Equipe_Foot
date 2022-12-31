@@ -1,6 +1,8 @@
 <?php
 	session_start();
 	include './../Fonctions/Fonctions.php';
+	blocageConnexion();
+	
 	$repertoirePhoto = null;
 	$linkpdo = null;
 	if(!empty($_POST['Nom']) && !empty($_POST['Prenom'])) {

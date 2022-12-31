@@ -47,7 +47,6 @@
 			if($erreur) {
 				echo "Votre mot de passe ou votre login est incorrect.";
 			}
-
 			if ($_SESSION['Connecter']) {
 				echo "
 					<p>
@@ -67,10 +66,7 @@
 			        </fieldset>
 				";
 			}
-		?>
-		
-		
-		
+		?>	
 	</body>
 </html>
 <!DOCTYPE HTML>

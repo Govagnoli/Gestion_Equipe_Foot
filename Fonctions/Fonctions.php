@@ -12,6 +12,7 @@
                         <ul class=\"sous\">
                             <li><a href=\"./RechercheJoueur.php\">Rechercher un joueur</a></li>
                             <li><a href=\"./AjoutJoueur.php\">Ajouter un joueur</a></li>
+                            <li><a href=\"./AfficherJoueurs.php\">Liste des joueurs</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -24,8 +25,9 @@
                         <li><a href=\"./index.php\">Connexion</a></li>
                         <li class=\"deroulant\"><a href=\"#\">Gestion des Joueurs &ensp;</a>
                         <ul class=\"sous\">
-                            <li><a href=\"./Pages/nonConnecter.php\">Rechercher un joueur</a></li>
-                            <li><a href=\"./Pages/nonConnecter.php\">Ajouter un joueur</a></li>
+                            <li><a href=\"./nonConnecter.php\">Rechercher un joueur</a></li>
+                            <li><a href=\"./nonConnecter.php\">Ajouter un joueur</a></li>
+                            <li><a href=\"./nonConnecter.php\">Liste des joueurs</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -41,11 +43,10 @@
         $db = 'foot_management';
 
         try {
-                return new PDO("mysql:host=$server;dbname=$db", $login, $mdp);
-            }
-                catch (Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
+            return new PDO("mysql:host=$server;dbname=$db", $login, $mdp);
+        } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
     }
 
 
@@ -160,8 +161,7 @@
             </form>
         </fieldset>" ;
     }
-
-
+    
     /*
     $linkpdo --> Object de type connection
     $joueur --> tableau associatif
@@ -329,6 +329,14 @@
         if($Erreurs==0) {
             $linkpdo->commit();
             echo "l'enregistrement à bien été pris en compte."; 
+        }
+    }
+
+    //Bloque l'affichage d'une page si l'utilisateur n'est pas connecté
+    function blocageConnexion() {
+        if (!isset($_SESSION['Connecter'])) {
+            header("Location: ./nonConnecter.php");
+            exit;
         }
     }
 
