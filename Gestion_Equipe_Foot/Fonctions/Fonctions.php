@@ -81,8 +81,8 @@
     }
 
     function afficherPhotoJoueurs($Joueur) {
-        $repertoirePhoto = "../../../projet-photos/";
-        chmod("../../../projet-photos", 0755);
+        $repertoirePhoto = "../projet-photos/";
+        chmod("../projet-photos", 0755);
         echo "<img src=\"".$repertoirePhoto.$Joueur['Photo']."\" alt=\"Photo du joueur\">";
     }
 

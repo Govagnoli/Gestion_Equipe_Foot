@@ -4,15 +4,20 @@
         echo "<fieldset>
             <legend>Modification du joueur ".$joueur['Nom']."</legend>
             <form action=\"ModifierUnJoueur.php\" method=\"post\">
-                <p>Licence <input type=\"number\" name =\"Num_Licence\" step=\"any\" pattern=\"\d{0,10}\" value = ".$joueur['Num_Licence']." required /></p>
+                <p>Licence <input type=\"int\" name =\"Num_Licence\" step=\"any\" min=\"100000000\" max=\"999999999\" value = ".$joueur['Num_Licence']." required /></p>
                 <p>Nom <input type=\"text\"  name =\"Nom\" value = ".$joueur['Nom']." required /></p>
                 <p>Prénom <input type=\"text\" name =\"Prenom\" value = ".$joueur['Prenom']." /></p>
-                <p>Date de naissance <input type=\"text\"  name =\"Date_naissance\" value = ".$joueur['Date_naissance']." required /> <br/>au format AAAA/MM/JJ</p>
-                <p>Taille  <input type=\"text\" name =\"Taille\" value = ".$joueur['Taille']." required /></p>
-                <p>Poid  <input type=\"text\" name =\"Poid\" value = ".$joueur['Poid']." required /></p>
+                <p>Date de naissance <input type=\"date\"  name =\"Date_naissance\" value = ".$joueur['Date_naissance']." required /></p>
+                <p>Taille  <input type=\"int\" name =\"Taille\" value = ".$joueur['Taille']." min=\"40\" max=\"200\" required /></p>
+                <p>Poid  <input type=\"int\" name =\"Poid\" value = ".$joueur['Poid']." min=\"0\" max=\"272\" required /></p>
                 <p>Poste préféré <input type=\"text\"  name =\"Poste_pref\" value = ".$joueur['Poste_pref']." required /></p>
                 <p>Note  <input type=\"text\"  name =\"note\" value = ".$joueur['note']." required /></p>
-                <p>Statut  <input type=\"text\" name =\"Statut\" value = ".$joueur['Statut']." required /></p>
+                <p><select name=\"Statut\">
+                    <option value=\"Actif\">Actif</option>;
+                    <option value=\"Blessé\">Blessé</option>;
+                    <option value=\"Suspendu\">Suspendu</option>;
+                    <option value=\"Absent\">Absent</option>;
+                </select></p>
 
                 <input type=\"hidden\" name =\"ex_Licence\" value = ".$joueur['Num_Licence']." />
 
