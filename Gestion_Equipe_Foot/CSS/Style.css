@@ -1,0 +1,167 @@
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #5fa9ee;
+    }
+    img {
+        filter: grayscale(20%);
+    }
+}
+
+/* Style général */
+body{
+    background-color: #1c1c1e;
+    color: #fefefe;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fin style général */
+
+/* squelette */
+    /* header */
+*{
+    font-family: sans-serif, Avenir;
+
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #E7E2CE;
+    color: #F9F7F0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav li:hover{
+    background-color: #E7E2CE;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #4D4D4D;
+    padding: 10px;
+}
+
+.sous{
+    display: none;
+    box-shadow: 1px 2px #CCC;
+    background-color: #ACA9A1;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #66645C;
+}
+.deroulant > a::after{
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+    /* Fin header */
+
+/* Page Index */
+.formulaire {
+    margin-top: 100px;
+}
+
+
+
+/* Page RechercheJoueur */
+    /* Formulaire */
+        .FormulaireRecherJoueur{
+            margin: 20px;
+            color: #EAEAEA;
+        }
+    /* Fin FinFormulaire*/
+/* Fin Page JoueursRecherches*/
+
+/* Page JoueursRecherches.php */
+    
+    /* Recherche de la photo et des information d'un joueur */
+        .rechercheJoueur{
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            color: #EAEAEA;
+        }
+    /* Fin recherche de la photo et des information d'un joueur */
+
+    /* Photo joueur */
+        .photoJoueur{
+            display: flex;   
+        }
+    /* Fin photo joueur*/
+
+    /* Recherche informations joueur */
+        .rechercheInformationsJoueur{
+            display: flex;
+        }
+    /* Fin recherche joueur*/
+
+    /* Boutons */
+        .Boutons{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+    /* Fin Boutons*/
+
+    /* Bouton Modifier Joueur*/
+        .BoutonsModifier{
+            display: flex;
+            margin-bottom: 10px;
+        }
+    /* Fin Bouton Modifier Joueur*/
+
+    /* Bouton Supprimer Joueur*/
+        .BoutonsSupprimer{
+            display: flex;
+            margin-top: 10px;
+        }
+    /* Fin Bouton Supprimer Joueur*/
+
+/* Fin page JoueursRecherches.php */
+
+/* Page modifierUnJoueur */
+    
+    /* Formulaire pour modifier un joueur*/
+    .FormModifierJoueur {
+    }
+
+
+/* Fin page modifierUnJoueur */
