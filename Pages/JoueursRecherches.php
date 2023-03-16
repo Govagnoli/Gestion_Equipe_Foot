@@ -1,7 +1,7 @@
 <?php
-	session_start();
 	include './../Fonctions/Fonctions.php';
 	blocageConnexion();
+	include './../Fonctions/Requetes.php';
 	
 	$repertoirePhoto = null;
 	$linkpdo = null;
@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<?php 
-			menu($_SESSION['Connecter']); 
+			menu(); 
 
 			if(!empty($_POST['Nom']) && !empty($_POST['Prenom'])) {
 				$data = requeteRecupererJoueur($linkpdo, $_POST['Nom'],$_POST['Prenom']);
@@ -47,7 +47,7 @@
 
 							#Bouton supprimer
 							echo '<div class="BoutonsSupprimer">' ;
-								BoutonSupprimer($linkpdo, $Joueur, 'Supprimer');
+								Bouton('./SupprimerUnJoueur.php', 'Supprimer', $Joueur);
 							echo '</div>';
 						echo '</div>'; 
 					
@@ -55,5 +55,12 @@
 				}
 			}
 		?>
+		<script>
+			document.querySelectorAll('.modify-button').forEach(button => {
+				button.addEventListener('click', () => {
+					window.location.href = button.dataset.redirection;
+				});
+			});
+		</script>
 	</body>
 </html>

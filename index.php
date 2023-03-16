@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	include './Fonctions/Fonctions.php';
 	include './Fonctions/FctIndex.php';
 
 	$erreur = false;
@@ -42,7 +43,7 @@
 	</head>
 	<body>
 		<?php 
-			menu($_SESSION['Connecter']);
+			menu(true);
 
 			if($erreur) {
 				echo "Votre mot de passe ou votre login est incorrect.";

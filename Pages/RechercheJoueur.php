@@ -1,6 +1,5 @@
-<?php 
-	session_start();
-	include './../Fonctions/Fonctions.php';
+<?php
+    include './../Fonctions/Fonctions.php';
 	blocageConnexion();
 ?>
 
@@ -12,10 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
 	</head>
 	<body>
-		<?php menu($_SESSION['Connecter']); ?>
+		<?php menu(); ?>
 		<div class="FormulaireRecherJoueur">
 			<fieldset>
-				<legend>Rechercher Joueur par son nom et prénom</legend>
+				<legend>Rechercher un Joueur</legend>
 				<form action="JoueursRecherches.php" method="post">
 					<p>Nom <input type="text"  name ="Nom"/></p>
 					<p>Prénom <input type="text" name ="Prenom"/></p>

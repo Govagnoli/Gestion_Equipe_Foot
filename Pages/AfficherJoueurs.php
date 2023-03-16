@@ -1,10 +1,10 @@
 <?php 
-	session_start();
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
 	include './../Fonctions/Fonctions.php';
 	blocageConnexion();
-	include './../Fonctions/FctAfficherJoueur.php';
+	include './../Fonctions/Requetes.php';
 	$linkpdo = connexionBDD();
-
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -15,9 +15,9 @@
 	</head>
 	<body>
 		<?php 
-			menu($_SESSION['Connecter']);
+			menu();
 
-			$joueurs = selectAll($linkpdo);
+			$joueurs = selectAllJoueurs($linkpdo);
 
 			foreach ($joueurs as $joueur) {
 				echo '<div class="rechercheJoueur">' ;
@@ -36,20 +36,26 @@
 						echo '<div class="Boutons">';
 							
 							#Bouton modifier
-							echo '<div class="BoutonsModifier">' ;
+							echo '<div class="Boutons">';
 								Bouton('./ModifierUnJoueur.php', 'Modifier', $joueur);
 							echo '</div>';
 
 							#Bouton supprimer
 							echo '<div class="BoutonsSupprimer">' ;
-								BoutonSupprimer($linkpdo, $joueur, 'Supprimer');
+								Bouton('./SupprimerUnJoueur.php', 'Supprimer', $joueur);
 							echo '</div>';
 						echo '</div>';
 					
 					echo '</div>';
 			}
 		?>
-
+		<script>
+			document.querySelectorAll('.modify-button').forEach(button => {
+				button.addEventListener('click', () => {
+					window.location.href = button.dataset.redirection;
+				});
+			});
+		</script>
 
 
 	</body>

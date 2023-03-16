@@ -1,9 +1,5 @@
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1c1c1e;
-        color: #fefefe;
-    }
     a {
         color: #5fa9ee;
     }
@@ -14,6 +10,8 @@
 
 /* Style général */
 body{
+    background-color: #1c1c1e;
+    color: #fefefe;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +22,7 @@ body{
 /* squelette */
     /* header */
 *{
-    font-family: sans-serif, Avenir;
+    font-family: sans-serif;
 
 }
 
@@ -120,26 +118,17 @@ nav > ul li:hover .sous{
             align-items: center;
             margin: 20px;
             color: #EAEAEA;
+            width: 100%;
         }
     /* Fin recherche de la photo et des information d'un joueur */
 
-    /* Photo joueur */
-        .photoJoueur{
-            display: flex;   
-        }
-    /* Fin photo joueur*/
-
-    /* Recherche informations joueur */
-        .rechercheInformationsJoueur{
-            display: flex;
-        }
-    /* Fin recherche joueur*/
+    /*cherche joueur*/
 
     /* Boutons */
         .Boutons{
             display: flex;
             flex-direction: column;
-            margin-left: 20px;
+            margin: 20px;
         }
     /* Fin Boutons*/
 
@@ -159,11 +148,58 @@ nav > ul li:hover .sous{
 
 /* Fin page JoueursRecherches.php */
 
-/* Page modifierUnJoueur */
+/* Page modifierUnMatch */
+    .ContainerModifierMatch {
+        display: flex;
+        align-items : center;
+        flex-wrap: wrap;
+    }
     
-    /* Formulaire pour modifier un joueur*/
-    .FormModifierJoueur {
+    .scrollableContent {
+        overflow-y: scroll;
+        width: 600px;
+        height: 800px;
+    }
+    
+    .AfficherJoueur {
+        display: flex;
+        flex-wrap: nowrap;
     }
 
+/* Fin page modifierUnMatch */
 
-/* Fin page modifierUnJoueur */
+/* Page Statistiques */
+    .StatGlobales{
+        display: flex;
+        flex-wrap: wrap ;
+    }
+    .pieChart {
+        padding: 10px;
+        margin: 30px;
+    }
+    .StatJoueur {
+        display: flex;
+        flex-wrap: nowrap ;
+    }
+    .formFiltre {
+        display: flex;
+        width: 500px;
+        height: 150px;
+    }
+    table{
+        border-collapse: collapse;
+        color: #fefefe;
+    }
+    
+    th, td{
+        border: 1px solid whitesmoke;
+        padding: 10px;
+        color: #fefefe;
+    }
+/* Fin Page Statistiques */
+
+/* Saisie Match */
+    .informationsSaisieMatchs {
+        display: flex;
+    }
+/* Fin Saisie Match */
