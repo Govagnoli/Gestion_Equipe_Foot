@@ -21,5 +21,5 @@ Vous pouvez: ajouter, rechercher, modifier, supprimer et voir les joueurs prése
 Concernant la programmation de matchs, vous pouvez : en ajouter, en modifier et en supprimer:
 ![image](https://github.com/Govagnoli/Gestion_Equipe_Foot/assets/81430707/9850c41c-8aa3-418a-9aca-e39be063bb3e)
 
-L'objectif éducatif lié à la réalisation du site web était de nous former à php et aux JSON Web Token. L'aspect esthétique n'était pas l'objectif visé par le sujet. Il fallait seulement avoir un site totalement fonctionnelle tout en respectant des règles de sécurité notamment sur les attaques d'injections etc..
+L'objectif éducatif lié à la réalisation du site web était de nous former à php et aux JSON Web Token. L'aspect esthétique n'était pas l'objectif visé par le sujet. Il fallait seulement avoir un site fonctionnel tout en respectant les règles de sécurités comme par exemple les attaques d'injections etc..
 
